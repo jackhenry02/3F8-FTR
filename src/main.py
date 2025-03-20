@@ -1,12 +1,17 @@
 # main.py
 # Entry point for training and evaluation
 
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+
 import numpy as np
 import matplotlib.pyplot as plt
-from src.utils import logistic, get_x_tilde, compute_average_ll
-from src.laplace import laplace_approximation
-from src.optimize import compute_map_solution
-from src.data_loader import load_data
+from utils import logistic, get_x_tilde, compute_average_ll
+from laplace import laplace_approximation
+from optimize import compute_map_solution
+from data_loader import load_data 
 
 def run_experiment():
     """Main function to load data, train model, and evaluate results."""
@@ -49,3 +54,4 @@ def plot_predictive_distribution(X, y, w):
 
 if __name__ == "__main__":
     run_experiment()
+    

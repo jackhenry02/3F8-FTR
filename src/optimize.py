@@ -3,7 +3,7 @@
 
 import numpy as np
 from scipy.optimize import fmin_l_bfgs_b
-from src.utils import logistic, get_x_tilde
+from utils import logistic, get_x_tilde
 
 def negative_log_posterior(w, X_tilde, y, sigma2_0):
     """Computes the negative log-posterior for MAP estimation."""
