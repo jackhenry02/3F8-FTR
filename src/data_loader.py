@@ -5,8 +5,8 @@ import numpy as np
 
 def load_data():
     """Loads and preprocesses the dataset."""
-    X = np.loadtxt('X.txt')
-    y = np.loadtxt('y.txt')
+    X = np.loadtxt('src/X.txt')
+    y = np.loadtxt('src/y.txt')
     
     # Shuffle data
     permutation = np.random.permutation(X.shape[0])

@@ -3,7 +3,7 @@
 
 import numpy as np
 from scipy.optimize import fmin_l_bfgs_b
-from src.utils import predict, compute_average_ll
+from utils import predict, compute_average_ll
 
 def laplace_approximation(X_tilde, y, w_map):
     """Computes the Laplace approximation for Bayesian logistic regression."""
